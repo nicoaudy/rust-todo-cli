@@ -27,6 +27,12 @@ impl TodoList {
         let todo_item = TodoItem::new(name);
         self.list.push(todo_item);
     }
+
+    fn print(&self) {
+        for item in &self.list {
+            println!("[{}] - {}", item.completed, item.name);
+        }
+    }
 }
 
 fn main() {
@@ -38,8 +44,6 @@ fn main() {
     todo_list.add_new("Brew ☕️".to_string());
 
     if command == "get" {
-        for item in todo_list.list {
-            println!("[{}] - {}", item.completed, item.name);
-        }
+        todo_list.print();
     }
 }
