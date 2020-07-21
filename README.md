@@ -1,6 +1,6 @@
 # Making todo cli in rust🤙
 
-- [] Hello World
+- [x] Hello World
 - [] Collect CLI arguments into Vector
 - [] Create a way to store user inputs
 - [] Starts with list all tasks
