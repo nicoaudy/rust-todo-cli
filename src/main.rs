@@ -28,6 +28,14 @@ impl TodoList {
         self.list.push(todo_item);
     }
 
+    fn mark_done(&mut self, index: usize) {
+        if self.list[index].completed == ' ' {
+            self.list[index].completed = 'x';
+        } else {
+            self.list[index].completed = ' ';
+        }
+    }
+
     fn print(&self) {
         for item in &self.list {
             println!("[{}] - {}", item.completed, item.name);
@@ -37,7 +45,8 @@ impl TodoList {
 
 enum Command {
     Get,
-    Add(String)
+    Add(String),
+    Done(usize)
 }
 
 fn main() {
@@ -45,9 +54,9 @@ fn main() {
     let command = match arguments[1].as_str() {
         "get" => Command::Get,
         "add" => Command::Add(arguments[2].clone()),
+        "done" => Command::Done(arguments[2].parse().expect("Error converting to integer")),
         _ => panic!("You must provide an accepted command")
     };
-
 
     let mut todo_list = TodoList::all();
     todo_list.add_new("Make a bread".to_string());
@@ -57,6 +66,10 @@ fn main() {
         Command::Get => todo_list.print(),
         Command::Add(task) => {
             todo_list.add_new(task);
+            todo_list.print();
+        },
+        Command::Done(index) =>{
+            todo_list.mark_done(index);
             todo_list.print();
         }
     }
