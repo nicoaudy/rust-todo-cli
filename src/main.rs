@@ -37,7 +37,6 @@ fn main() {
     todo_list.add_new("Make a bread".to_string());
     todo_list.add_new("Brew ☕️".to_string());
 
-
     if command == "get" {
         for item in todo_list.list {
             println!("[{}] - {}", item.completed, item.name);

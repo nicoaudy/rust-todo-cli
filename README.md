@@ -6,8 +6,8 @@
 - [x] Starts with list all tasks
 - [x] Create an empty list
 - [x] Seed the list with default data
-- [] List all tasks
-- [] Add new task
+- [x] List all tasks
+- [x] Add new task
 - [] Mark task as complete
 - [] Unmark a task
 - [] Remove a task
