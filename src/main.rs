@@ -5,6 +5,15 @@ struct TodoItem {
     completed: char
 }
 
+impl TodoItem {
+    fn new(name: String) -> TodoItem {
+        return TodoItem{
+            name: name,
+            completed: ' '
+        }
+    }
+}
+
 fn main() {
     let arguments: Vec<String> = env::args().collect();
     let command = arguments[1].clone();
