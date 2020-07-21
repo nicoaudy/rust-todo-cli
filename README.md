@@ -2,10 +2,10 @@
 
 - [x] Hello World
 - [x] Collect CLI arguments into Vector
-- [] Create a way to store user inputs
-- [] Starts with list all tasks
-- [] Create an empty list
-- [] Seed the list with default data
+- [x] Create a way to store user inputs
+- [x] Starts with list all tasks
+- [x] Create an empty list
+- [x] Seed the list with default data
 - [] List all tasks
 - [] Add new task
 - [] Mark task as complete
