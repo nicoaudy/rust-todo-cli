@@ -22,6 +22,11 @@ impl TodoList {
     fn all() -> TodoList {
         return TodoList{list: Vec::new()};
     }
+
+    fn add_new(&mut self, name: String) {
+        let todo_item = TodoItem::new(name);
+        self.list.push(todo_item);
+    }
 }
 
 fn main() {
@@ -29,8 +34,8 @@ fn main() {
     let command = arguments[1].clone();
 
     let todo_list = TodoList::all();
-    let todo_1 = TodoItem::new("Make a bread".to_string());
-    let todo_2 = TodoItem::new("Brew ☕️".to_string());
+    todo_list.add_new("Make a bread".to_string());
+    todo_list.add_new("Brew ☕️".to_string());
 
 
     if command == "get" {
