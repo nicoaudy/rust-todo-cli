@@ -33,7 +33,7 @@ fn main() {
     let arguments: Vec<String> = env::args().collect();
     let command = arguments[1].clone();
 
-    let todo_list = TodoList::all();
+    let mut todo_list = TodoList::all();
     todo_list.add_new("Make a bread".to_string());
     todo_list.add_new("Brew ☕️".to_string());
 
