@@ -9,9 +9,8 @@
 - [x] List all tasks
 - [x] Add new task
 - [x] Mark task as complete
-- [] Unmark a task
-- [] Remove a task
+- [x] Unmark a task
+- [x] Remove a task
 - [] Build for production
-     - [] Linux
-     - [] Windows
-     - [] Mac
+     - [x] Linux
+     - [x] Mac
