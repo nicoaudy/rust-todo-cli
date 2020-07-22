@@ -11,6 +11,6 @@
 - [x] Mark task as complete
 - [x] Unmark a task
 - [x] Remove a task
-- [] Build for production
+- [x] Build for production
      - [x] Linux
      - [x] Mac
