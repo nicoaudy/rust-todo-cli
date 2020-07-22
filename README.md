@@ -8,7 +8,7 @@
 - [x] Seed the list with default data
 - [x] List all tasks
 - [x] Add new task
-- [] Mark task as complete
+- [x] Mark task as complete
 - [] Unmark a task
 - [] Remove a task
 - [] Build for production
